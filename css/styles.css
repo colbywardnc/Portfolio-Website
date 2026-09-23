@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+    --carolina-blue: #7BAFD4;
+    --dark-blue: #13294B;
+    --off-white: #F7F9FB;
+    --white: #FFFFFF;
+    --text: #263238;
+    --muted: #5F6B73;
+    --border: #D9E2E8;
+}
+
+/* Base Styling */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--off-white);
+    color: var(--text);
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.5;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+.container {
+    width: min(90%, 1100px);
+    margin: 0 auto;
+}
+
+/* Typography */
+
+h1, h2, h3, .logo {
+    font-family: "Big Caslon", Georgia, serif;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.75rem;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+p {
+    max-width: 70ch;
+}
+
+.hero .container, .about .container, .projects > .container, .contact .container {
+    text-align: center;
+}
+.hero p, .about p, .contact p, .projects > .container > p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 0;
+}
+
+.logo {
+    color: var(--white);
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover, nav a:focus {
+    color: var(--carolina-blue);
+}
+
+/* Main */
+
+.hero, .about, .contact, .projects {
+    padding: 5rem 0;
+}
+
+.hero {
+    background-color: var(--white);
+}
+
+.eyebrow {
+    margin-bottom: 0.75rem;
+    color: var(--dark-blue);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.25rem;
+    border: 2px solid var(--dark-blue);
+    border-radius: 0.4rem;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover, .button:focus {
+    background-color: var(--carolina-blue);
+    border-color: var(--carolina-blue);
+    color: var(--dark-blue);
+}
+
+/* About */
+
+.about {
+    background-color: var(--white);
+}
+
+/* Contact */
+
+.contact {
+    background-color: var(--white);
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.contact-info a {
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+.contact-info a:hover, .contact-info a:focus {
+    color: var(--carolina-blue);
+}
+
+/* Forms */
+
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 0.35rem;
+    background-color: var(--white);
+    color: var(--text);
+    font: inherit;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid var(--carolina-blue);
+    border-color: var(--dark-blue);
+}
+
+/* Projects */
+
+.projects {
+    background-color: var(--off-white);
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 750px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    background-color: var(--white);
+}
+
+.project-image {
+    width: 100%;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+}
+
+.project-content {
+    padding: 1.5rem;
+}
+
+.project-type {
+    margin-bottom: 0.5rem;
+    color: var(--dark-blue);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06rem;
+    text-transform: uppercase;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Larger Screens */
+
+@media (min-width: 768px) {
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero, .about, .contact, .projects {
+        padding: 7rem 0;
+    }
+
+    .contact-info, form {
+        flex: 1;
+    }
+
+    .project-card {
+        max-width: 750px;
+    }
+
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
