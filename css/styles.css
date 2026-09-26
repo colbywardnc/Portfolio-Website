@@ -128,6 +128,10 @@ nav a:hover, nav a:focus {
     color: var(--carolina-blue);
 }
 
+nav a:active {
+    color: var(--carolina-blue);
+}
+
 /* Main */
 
 .hero, .about, .contact, .projects {
@@ -166,6 +170,10 @@ nav a:hover, nav a:focus {
     background-color: var(--carolina-blue);
     border-color: var(--carolina-blue);
     color: var(--dark-blue);
+}
+
+.button:active {
+    transform: translateY(1px);
 }
 
 /* About */
@@ -316,5 +324,15 @@ footer p {
     footer .container {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .project-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .project-card {
+        max-width: none;
     }
 }
