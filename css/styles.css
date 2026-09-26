@@ -313,16 +313,6 @@ footer p {
         flex: 1;
     }
 
-    .project-list {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-
-    .project-card {
-        max-width: none;
-    }
-
     footer .container {
         flex-direction: row;
         justify-content: space-between;
